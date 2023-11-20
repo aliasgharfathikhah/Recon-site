@@ -1,0 +1,426 @@
+@font-face {
+    font-family: 'Fairview';
+    src: url('./coolvetica\ condensed\ rg.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'title';
+    src: url('./Waxaw-Font.woff') format('woff');
+}
+
+body {
+
+    background-color: #0a0a0a;
+    color: #0f0;
+    /* font: icon; */
+    font: icon;
+    font-size: xx-large;
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header {
+    background-image: url('./22\ \(101\).jpg');
+    background-color: #222;
+    text-align: center;
+    padding: 50px;
+    /* border-bottom-left-radius: 100px; */
+    /* border-bottom-right-radius: 100px; */
+    font-family: 'title', sans-serif;
+}
+
+input[type=url] {
+    font: icon;
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #333;
+    color: #0f0;
+    text-align: center;
+    border-radius: 10px;
+    font-size: xx-large;
+}
+
+button {
+    font: icon;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: xx-large;
+}
+
+button:hover {
+    border-radius: 10px;
+    transition: all .5s;
+    background-color: red;
+    color: white;
+}
+
+.footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.textfooter {
+    /* position: fixed; */
+
+    margin-bottom: 0;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.parent2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    background-color: rgb(54, 54, 54);
+    width: 60%;
+    border-radius: 10px;
+}
+
+.content2 {
+    background-color: rgb(54, 54, 54);
+    width: 20%;
+    border-radius: 10px;
+}
+
+.title {
+    color: red;
+    font: icon;
+    font-size: 50px;
+}
+
+.tozihkoli {
+    width: 60%;
+    /* background-color: #333; */
+    margin: 20px;
+    padding: 2px;
+}
+
+#imagtozih {
+    background-image: url('./home_imag/Data\ analysis\ \(1\).gif');
+    background-size: cover;
+    width: 35%;
+    height: 500px;
+    /* font-size: 400px; */
+}
+
+#imagtozih2 {
+    background-image: url('./home_imag/Search\ \(1\).gif');
+    background-size: cover;
+    width: 35%;
+    height: 500px;
+    /* font-size: 400px; */
+}
+
+#imagtozih3 {
+    background-image: url('./home_imag/Port.gif');
+    background-size: cover;
+    width: 35%;
+    height: 500px;
+    /* font-size: 400px; */
+}
+
+#imagtozih4 {
+    background-image: url('./home_imag/Profile\ data.gif');
+    background-size: cover;
+    width: 35%;
+    height: 500px;
+    /* font-size: 400px; */
+}
+
+#imagtozih5 {
+    background-image: url('./home_imag/Mobile.gif');
+    background-size: cover;
+    width: 35%;
+    height: 500px;
+    /* font-size: 400px; */
+}
+
+.navbar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.navbar a:hover .dropdown-content {
+    display: block;
+}
+
+summary {
+  color: #33FF33;
+  background-color: #1A1A1A;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #33FF33;
+  border-radius: 15px;
+  margin: 2px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: x-large;
+    }
+
+    .title {
+        margin-left: 10px;
+        font-size: 35px;
+    }
+
+    .navbar a {
+        padding: 10px 12px;
+    }
+
+    .header {
+        padding: 30px;
+    }
+
+    input[type=url] {
+        width: 80%;
+        font-size: large;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: large;
+    }
+
+    .parent {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .content {
+        width: 80%;
+        margin-bottom: 20px;
+        margin-left: 10%;
+        overflow-y: scroll;
+        height: 200px;
+    }
+
+    .content2 {
+        width: 80%;
+        margin-bottom: 20px;
+        margin-left: 10%;
+        overflow-y: scroll;
+        height: 200px;
+        text-align: center;
+    }
+
+    .parent2 {
+        position: relative;
+        margin-bottom: 510px;
+    }
+
+    .tozihkoli {
+        position: absolute;
+        width: 80%;
+        /* z-index: 1; */
+        top: 200px;
+    }
+
+    #imagtozih {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 250px;
+        z-index: 0;
+    }
+
+    #imagtozih2 {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 250px;
+        z-index: 0;
+    }
+
+    #imagtozih3 {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 250px;
+        z-index: 0;
+    }
+
+    #imagtozih4 {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 250px;
+        z-index: 0;
+    }
+
+    #imagtozih5 {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 250px;
+        z-index: 0;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 601px) {
+    body {
+        font-size: x-large;
+    }
+
+    .navbar a {
+        padding: 12px 14px;
+    }
+
+    .header {
+        padding: 40px;
+    }
+
+    input[type=url] {
+        width: 60%;
+        font-size: x-large;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: x-large;
+    }
+
+    .parent {
+        flex-direction: row;
+    }
+
+    .content {
+        width: 80%;
+        margin-bottom: 20px;
+        margin-left: 10%;
+        overflow-y: scroll;
+        height: 200px;
+    }
+
+    .content2 {
+        width: 80%;
+        margin-bottom: 20px;
+        margin-left: 10%;
+        overflow-y: scroll;
+        height: 200px;
+    }
+
+    .parent2 {
+        position: relative;
+        margin-bottom: 510px;
+    }
+
+    .tozihkoli {
+        position: absolute;
+        width: 80%;
+        /* z-index: 1; */
+        top: 200px;
+    }
+
+    #imagtozih {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 250px;
+        z-index: 0;
+    }
+
+    #imagtozih2 {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 250px;
+        z-index: 0;
+    }
+
+    #imagtozih3 {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 250px;
+        z-index: 0;
+    }
+
+    #imagtozih4 {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 250px;
+        z-index: 0;
+    }
+
+    #imagtozih5 {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 250px;
+        z-index: 0;
+    }
+}

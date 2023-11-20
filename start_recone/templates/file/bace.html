@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'file/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="stylesheet" type="text/css" href="./style.css"> -->
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="header">
+        <h1>RECON</h1>
+        <p>A website created by a hacker.</p>
+    </div>
+    <br><br><br><br>
+    <!-- <br>
+    <div class="parent">
+
+        {% block port %}{% endblock %} <br>
+
+    </div>
+    <br><br>
+    <div class="parent">
+        {% block wois %}{% endblock %}
+    </div> -->
+
+    <div class="navbar">
+        <a href="#whis" onclick="showPanel('Whois/info')">Whois/info</a>
+        <a href="#link" onclick="showPanel('Links')">Links</a>
+        <a href="#open_port" onclick="showPanel('OpenPort')">Open port</a>
+        <a href="#phone_number" onclick="showPanel('pn')">phone number</a>
+        <a href="#Email_address" onclick="showPanel('ea')">Email address</a>
+    </div>
+
+    <div id="Info" class="panel">
+        {% block whois %}{% endblock %}
+    </div>
+    <div id="about" class="panel" style="display: none;">
+        
+    </div>
+    <div id="Links" class="panel" style="display: none;">
+        {% block link %}{% endblock %}
+    </div>
+
+    <div id="OpenPort" class="panel" style="display: none;">
+        {% block ports %}{% endblock %}
+    </div>
+
+    <div id="pn" class="panel" style="display: none;">
+        {% block phone_number %}{% endblock %}
+    </div>
+    
+    <div id="ea" class="panel" style="display: none;">
+        {% block Email_address %}{% endblock %}
+    </div>
+
+
+    <script>
+        function showPanel(panelId) {
+            var panels = document.getElementsByClassName('panel');
+            for (var i = 0; i < panels.length; i++) {
+                panels[i].style.display = 'none';
+            }
+            document.getElementById(panelId).style.display = 'block';
+        }
+    </script>
+
+
+
+    <br><br><br><br><br>
+    <div class="footer">
+        <p class="textfooter">Everything is under the supervision of FATHI company</p>
+    </div>
+
+</body>
+
+</html>
